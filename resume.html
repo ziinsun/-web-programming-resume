@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이력서</title>
+<style>
+
+body {
+    background-color: rgb(231, 231, 231);
+    font-family: ;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #333;
+  
+  
+}
+
+li {
+  float: left;
+  font-size: 12px;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  background-color:#111;
+}
+
+li a.active {
+  color: rgb(0, 0, 0);
+  background-color:  rgb(255, 251, 244); 
+}
+div {
+    background-color: #ffffff;
+    font-size: 14px;
+}
+table{
+    width: 100%;
+    height: 50%;
+    padding: 0%;
+    list-style-type: none;
+    border-collapse: collapse;
+}
+
+
+h4{
+  text-align: center; color: white; background-color: #333; margin-top: 1px; margin-bottom: 5px; 
+  padding: 5px; width: 100%;
+
+}
+
+table,th,td{
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">이력서</h2>
+
+<ul style=" width: 100%;">
+  <li><a  href="#personal">인적사항</a></li>
+  <li><a href="#education">학력</a></li>
+  <li><a href="#portfolio">포트폴리오</a></li>
+  <li><a href="#interest">취미</a></li>
+  <li><a href="#tags">Tags</a></li>         <!--reference-->
+</ul>
+
+<h4 id="personal">인적사항</h5>
+<div >
+    <table align="center" style="text-align: center;" >
+        <tr><td rowspan="3" align="center"><img src="김진선.jpg" alt="" width="140" height="180" ></td>
+        <td><b>이름</b></td><td>김진선</td><td><b>학번</b></td><td>2019575015</td>
+    </tr>
+        <tr>
+            <td><b>생년월일</b></td><td>2000.06.29</td><td><b>email</b></td><td>jinsun629@ks.ac.kr</td>
+        </tr>
+        <tr>
+            <td><b>연락처</b></td><td>010-****-****</td><td><b>주소</b></td><td>부산광역시 연제구</td>
+        </tr>
+    </table>    
+</div>
+<h4 id="education">학력</h4>
+<div>
+    <table align="center" style="text-align: center; height: 200px;" >
+    <tr><td><b>학위과정</b></td><td><b>기간</b></td><td><b>학교명</b></td><td><b>전공</b></td><td><b>졸업</b></td></b></tr>
+    <tr><td>중학교</td><td>2013.03~2016.02</td><td>연제중학교</td><td></td><td>2016.02</td></tr>
+    <tr><td>고등학교</td><td>2016.03~2019.02</td><td>연제고등학교</td><td>인문계</td><td>2019.02</td></tr>
+    <tr><td>대학교</td><td>2019.03~2023.02</td><td>경성대학교</td><td>소프트웨어</td><td>2023.02(예정)</td></tr>
+</table>
+</div>
+<h4  id="portfolio">포트폴리오</h4>
+<div>
+    <details style="padding: 10px;">
+      <summary><strong>portfolio name</strong></summary>
+      <hr style="border-style: dotted;"><p>1번 포트폴리오 입니다</p>
+    </details>
+    <hr>
+    <details style="padding: 10px;">
+      <summary><strong>portfolio name</strong></summary>
+      <hr style="border-style: dotted;"><p>2번 포트폴리오 입니다</p>
+    </details>
+</div>
+<!-- <h4 id="interest">취미</h4>
+<div style="font-size: 12px;">
+</div> -->
+<h4 id="tags">사용한 태그 정리</h4>
+<div>
+  <dl style="font-size: 14px;">
+    <dt><strong>h1~6</strong></dt>
+    <dd>문단의 제목에 사용되는 태그</dd>
+    <hr>
+    <dt><strong>ul,li</strong></dt>
+    <dd>리스트를 만들 때 사용하는 태그</dd> <hr>
+    <dt><strong>:active</strong></dt>
+    <dd>활성화 된 링크의 속성태그</dd>
+    <hr>
+    <dt><strong>table,th,tr,td,rowspan</strong></dt>
+    <dd>table을 만들 때 사용하는 태그 <br> th: 셀 제목 <br> tr: 테이블 내의 한 행 <br> td : 행에 포함된 셀 <br> rowspan : 세로 열 병합</dd>
+    <hr>
+    <dt><strong>dl,dt,dd</strong></dt>
+    <dd>정의 리스트를 만들 때 사용하는 태그</dd>
+    <hr>
+    <dt><strong>img</strong></dt>
+    <dd>이미지를 표시하는 태그 </dd>
+    <hr>
+    <dt><strong>hr</strong></dt>
+    <dd>문서의 구분선을 생성하는 태그</dd>
+    <hr>
+    <dt><strong>details,summary</strong></dt>
+    <dd>항복을 보거나 숨길 수 있게 만드는 태그</dd>
+  </dl>
+</div>
+
+<h4>--reference--</h4>
+  <li style="">명품 웹 프로그래밍(ppt), w3schools HTML,CSS</li>
+</body>
+</html>
